@@ -8,7 +8,9 @@ gem 'rails', '3.2.12'
 gem 'sqlite3'
 
 group :development do
-  gem "rspec-rails"
+  gem 'rspec-rails'
+  gem 'webrat', '0.7.1'
+  gem 'sqlite3'
 end
 
 # group :production do 

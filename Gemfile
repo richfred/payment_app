@@ -17,8 +17,12 @@ group :development do
   
 end
 
-group :production do 
-  gem 'pg'
+group :development, :test do 
+  if RUBY_VERSION =~ /1.9/ 
+    gem 'ruby-debug19' 
+  else 
+    gem 'ruby-debug' 
+  end 
 end
 
 group :test do 

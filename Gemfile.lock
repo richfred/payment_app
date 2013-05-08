@@ -88,6 +88,7 @@ GEM
     mime-types (1.23)
     multi_json (1.7.3)
     nokogiri (1.5.9)
+    pg (0.14.1)
     polyglot (0.3.3)
     pry (0.9.12.1)
       coderay (~> 1.0.5)
@@ -187,6 +188,7 @@ DEPENDENCIES
   gravatar_image_tag (= 0.1.0)
   guard-spork
   jquery-rails
+  pg
   rails (= 3.2.12)
   rspec
   rspec-rails

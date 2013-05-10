@@ -1,4 +1,7 @@
 class ItemsController < ApplicationController
+  before_filter :signed_in_user, only: [:index, :edit, :update]
+  before_filter :correct_user,   only: [:edit, :update]
+  before_filter :admin_user,     only: :destroy
   
   def new
   	@item = Item.new
@@ -21,5 +24,11 @@ class ItemsController < ApplicationController
       render 'new'
     end
   end
+
+  private
+
+    def admin_user
+       redirect_to(root_path) unless current_user.admin?
+    end
 
 end

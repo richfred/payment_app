@@ -8,6 +8,10 @@ class ItemsController < ApplicationController
   	@item = Item.find(params[:id])
   end
 
+  def index
+  	@items = Item.all
+  end
+
   def create
     @item = Item.new(params[:item])
     if @item.save

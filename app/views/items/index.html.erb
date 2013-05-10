@@ -1,0 +1,42 @@
+<% provide(:title, 'All Items') %>
+<h1>All items</h1>
+
+<table>
+	<tr> 
+	  
+		<td><b>Name</b></td>
+		<td><b>Category</b></td>
+		<td><b>Price</b></td>
+	</tr>
+	
+		
+
+             <% @items.each do |item| %>
+              <tr>
+               
+                <td>
+     			 <%= link_to item.name, item %>
+     			</td>
+
+     			<td>
+     			 <%= item.price %>
+     			</td>
+
+    		    <td>
+     			 <%= item.category %>
+     			</td> 
+
+     			
+    		   
+    		   <tr>
+  			 <% end %>
+
+
+</table>
+
+
+
+
+	  
+    
+   

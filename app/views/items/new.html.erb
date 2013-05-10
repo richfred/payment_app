@@ -1,7 +1,8 @@
+<% provide(:title, 'All Items') %>
 <div class="row">
 
   <div class="span6 offset3">
-  	<h1>Item Entry</h1>
+  	<h1>Add new item</h1>
   	<p style = "color:grey;"> After you have entered item details, you can easily view and edit them.</p>
     <%= form_for(@item) do |f| %>
     <%= render 'shared/error_messagesitem' %>

@@ -1,4 +1,10 @@
-<h1><%= @item.name %></h1>
+<% provide(:title, 'All Items') %>
+
+<div class="row">
+
+  <div class="span6 offset3">
+  	<h1>Show Items</h1>
+  	<p style = "color:grey;"> An item showing its price and category, click on item name to edit.</p>
 <table>
 	<tr>
 	  
@@ -13,3 +19,6 @@
 		<td><%= @item.price %></td>
 	</tr>
 </table>
+
+</div>
+</div>

@@ -1,6 +1,11 @@
 PaymentApp::Application.routes.draw do
   
+  get "items/new"
+
+  get "payments/new"
+
   resources :users
+  resources :items
   resources :sessions, only: [:new, :create, :destroy]
   
   root :to => "pages#home"
@@ -11,6 +16,8 @@ PaymentApp::Application.routes.draw do
   match '/signup',  :to => 'users#new'
   match '/signin',  :to => 'sessions#new'
   match '/signout', :to => 'sessions#destroy'
+
+  match '/create_item', :to => 'items#new'
 
 
 

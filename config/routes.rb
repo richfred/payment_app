@@ -18,6 +18,7 @@ PaymentApp::Application.routes.draw do
   match '/signout', :to => 'sessions#destroy'
 
   match '/create_item', :to => 'items#new'
+  match '/edit_item', :to => 'items#edit'
 
 
 
@@ -65,7 +66,7 @@ PaymentApp::Application.routes.draw do
   #   namespace :admin do
   #     # Directs /admin/products/* to Admin::ProductsController
   #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
+  #     resources :productss
   #   end
 
   # You can have the root of your site routed with "root"

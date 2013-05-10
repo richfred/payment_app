@@ -8,15 +8,42 @@
 <table>
 	<tr>
 	  
-		<td><b>Name</b></td>
-		<td><b>Category</b></td>
-		<td><b>Price</b></td>
+		<td><b>Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td>
+		<td><b>Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td>
+		<td><b>Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td>
 	  
     </tr>
     <tr>
-		<td><%= @item.name %></td>
-		<td><%= @item.category %></td>
-		<td><%= @item.price %></td>
+		<td>
+		    <ul class="users">
+     			<li><%= @item.name %> </li>
+     		</ul>
+     	</td>
+
+     	<td>
+		    <ul class="users">
+     			<li><%= @item.price %></li>
+     		</ul>
+     	</td>
+
+     	<td>
+		    <ul class="users">
+     			<li><%= @item.category %></li>
+     		</ul>
+
+     	</td>
+
+
+     	<td>
+
+		    <ul class="users">
+     	    <li> <%= link_to "delete", @item, method: :delete,
+                                  data: { confirm: "You sure?" } %> </li>
+                              </ul>
+        </td>
+
+      
+		
 	</tr>
 </table>
 

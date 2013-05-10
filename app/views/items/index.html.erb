@@ -10,8 +10,8 @@
   <table>
 	<tr> 
 	  
-		<td><b>Name  --------------------------  </b></td>
-		<td><b>Price ------------------</b></td>
+		<td><b>Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b></td>
+		<td><b>Price &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></td>
 		<td><b>Category</b></td>
 		
 	</tr>
@@ -19,18 +19,26 @@
 		
 
              <% @items.each do |item| %>
+
+
               <tr>
                
-                <td>
-     			 <%= link_to item.name, item %>
+          <td>
+            <ul class="users">
+     			    <li><%= link_to item.name, item %> </li>
+            </ul>
      			</td>
 
      			<td>
-     			 <%= item.price %>
+            <ul class="users">
+     			    <li> <%= item.price %> </li>
+            </ul>
      			</td>
 
-    		    <td>
-     			 <%= item.category %>
+    		  <td>
+            <ul class="users">
+     			    <li><%= item.category %></li>
+            </ul>
      			</td> 
 
      			
@@ -40,6 +48,8 @@
 
 
 </table>
+
+
 
   </div>
 </div>

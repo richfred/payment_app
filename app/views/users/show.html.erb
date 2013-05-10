@@ -1,3 +1,9 @@
+
+<div class="row">
+
+  <div class="span6 offset3">
+  	<h1><%= @user.name %></h1>
+  	
 <table class="profile" summary = "Profile information">
 	<tr><%= gravatar_for @user %>  <%= @user.name %>
 		<td class="main">
@@ -5,13 +11,5 @@
 			
 		</td>
 
-		<!-- <td class="sidebar round">
-			<h3>Customer Details</h3>
-			<strong>Name</strong> <%= @user.name %><br />
-			<strong>Items bought</strong> <%= @user.name %><br />
-			<strong>Amount paid</strong> <%= @user.name %><br />
-			<strong>Outstanding amount</strong> <%= @user.name %><br />
-		
-		</td> -->
 	</tr>
 </table> 
